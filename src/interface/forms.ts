@@ -1,14 +1,16 @@
 import { FormControlProps, InputProps } from "@chakra-ui/react";
 import { FormikErrors, FormikTouched } from "formik";
 
+
+
 export interface IFormInputProps {
   name: string;
   label?: React.ReactNode;
   placeholder?: string;
   type?: string;
   value?: any;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  onChange?: '(e: React.ChangeEvent<HTMLInputElement>) => void';
+  onBlur?: '(e: React.FocusEvent<HTMLInputElement>) => void';
   error?:
   | string
   | string[]
@@ -31,7 +33,7 @@ export interface IRequisitionDetailsValues {
   requestTitle: string;
   owner: string;
   hiringManager: string;
-  noOfOpenings: string;
+  noOfOpenings: 0;
   urgency: string;
   employmentType: string;
   prefferedGender: string;

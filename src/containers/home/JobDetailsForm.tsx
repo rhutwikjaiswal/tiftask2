@@ -35,8 +35,8 @@ const JobDetailsForm: React.FC<{
           label="Job Title"
           placeholder="Enter job title"
           name="jobTitle"
-          onChange={handleChange}
-          onBlur={handleBlur}
+          onChange={handleChange as any}
+          onBlur={handleBlur as any}
           value={values?.jobTitle}
           error={errors?.jobTitle}
           touched={touched?.jobTitle}
@@ -45,8 +45,8 @@ const JobDetailsForm: React.FC<{
           label="Job Details"
           placeholder="Enter job details"
           name="jobDetails"
-          onChange={handleChange}
-          onBlur={handleBlur}
+          onChange={handleChange as any}
+          onBlur={handleBlur as any}
           value={values?.jobDetails}
           error={errors?.jobDetails}
           touched={touched?.jobDetails}
@@ -55,8 +55,8 @@ const JobDetailsForm: React.FC<{
           label="Job Location"
           name="jobLocation"
           placeholder="Enter job location"
-          onChange={handleChange}
-          onBlur={handleBlur}
+          onChange={handleChange as any}
+          onBlur={handleBlur as any}
           error={errors.jobLocation}
           touched={touched.jobLocation}
           value={values.jobLocation}

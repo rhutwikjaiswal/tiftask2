@@ -1,15 +1,4 @@
-import {
-  Container,
-  Tabs,
-  TabList,
-  Tab,
-  TabPanels,
-  TabPanel,
-  Heading,
-  TabProps,
-  Box,
-  Grid,
-} from "@chakra-ui/react";
+import {Container,Tabs,TabList,Tab,TabPanels,TabPanel,Heading,TabProps,Box,Grid,} from "@chakra-ui/react";
 import React, { useState } from "react";
 import InterviewSettingsForm from "./InterviewSettingsForm";
 import JobDetailsForm from "./JobDetailsForm";
@@ -38,7 +27,8 @@ const HomeLayout = () => {
         <Heading fontFamily="Poppins" fontSize="1.5rem" my="2rem">
           Create Candidate Requisition
         </Heading>
-        <Tabs index={page} isLazy lazyBehavior="keepMounted">
+        <Tabs  index={page} isLazy lazyBehavior="keepMounted">
+          <>
           <TabList>
             <CustomTab>Requistion Details</CustomTab>
             <CustomTab>Job Details</CustomTab>
@@ -58,6 +48,7 @@ const HomeLayout = () => {
             </TabPanels>
             <DisplayCard />
           </Grid>
+          </>
         </Tabs>
       </Container>
     </Box>

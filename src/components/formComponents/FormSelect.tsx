@@ -52,9 +52,11 @@ const FormSelect: React.FC<IFormSelectProps> = ({
         onChange={handleChange}
         onBlur={handleBlur}
         options={options}
+        id="long-value-select"
+        instanceId="long-value-select"
         // styles
         styles={{
-          container: (base) => ({
+          container: (base:any) => ({
             ...base,
             width: "100%",
             minWidth: "none",
@@ -62,7 +64,7 @@ const FormSelect: React.FC<IFormSelectProps> = ({
             maxHeight: "none",
             minHeight: "none",
           }),
-          control: (base, { isFocused }) => ({
+          control: (base:any, { isFocused }:{isFocused:any}) => ({
             ...base,
             width: "100%",
             minWidth: "272px",
@@ -80,11 +82,11 @@ const FormSelect: React.FC<IFormSelectProps> = ({
               border: `1px solid ${theme.colors.primary}`,
             },
           }),
-          valueContainer: (base) => ({
+          valueContainer: (base:any) => ({
             ...base,
             paddingLeft: "20px",
           }),
-          option: (base, { isFocused }) => ({
+          option: (base:any, { isFocused }:{isFocused:any}) => ({
             ...base,
             fontSize: ".875rem",
             fontWeight: "500",

@@ -50,8 +50,8 @@ const RequisitionDetailsForm: React.FC<{
           label="Requisition Title"
           placeholder="Enter requisition title"
           name="requisitionTitle"
-          onChange={handleChange}
-          onBlur={handleBlur}
+          onChange={handleChange as any}
+          onBlur={handleBlur as any}
           value={values?.requisitionTitle}
           error={errors?.requisitionTitle}
           touched={touched?.requisitionTitle}
@@ -60,8 +60,8 @@ const RequisitionDetailsForm: React.FC<{
           label="Number of openings"
           placeholder="Enter number of openings"
           name="noOfOpenings"
-          onChange={handleChange}
-          onBlur={handleBlur}
+          onChange={handleChange as any}
+          onBlur={handleBlur as any}
           value={values?.noOfOpenings}
           error={errors?.noOfOpenings}
           touched={touched?.noOfOpenings}
